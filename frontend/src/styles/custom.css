@@ -1,0 +1,116 @@
+/* Bottone con gradient blu elettrico */
+.btn-blue {
+  background: linear-gradient(45deg, #1e90ff, #0056d2);
+  border: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.6);
+  transition: background 0.3s ease;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+  background: linear-gradient(45deg, #0056d2, #1e90ff);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.8);
+  color: white;
+}
+
+/* Alert rosso con bordo spesso e sfondo leggermente sfumato */
+.alert-red {
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  color: white;
+  font-weight: 600;
+  border: 2px solid #d72631;
+  box-shadow: 0 4px 10px rgba(215, 38, 49, 0.6);
+}
+
+/* Label e titoli blu scuro con ombra leggera */
+.label-blue {
+  color: #007bff;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Control: bordo arrotondato e ombra al focus */
+.form-control {
+  border-radius: 10px;
+  border: 2px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.5);
+  outline: none;
+}
+
+/* Container con sfondo leggermente sfumato e bordi arrotondati */
+.form-container {
+  background: #f7f9fc;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Container login - stile simile a register */
+.login-container {
+  background: #f7f9fc;
+  border-radius: 15px;
+  padding: 30px 25px;
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottone login - stesso stile btn-blue */
+.btn-login {
+  background: linear-gradient(45deg, #1e90ff, #0056d2);
+  border: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.6);
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover, .btn-login:focus {
+  background: linear-gradient(45deg, #0056d2, #1e90ff);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.8);
+  color: white;
+}
+
+/* Input login - bordo arrotondato e ombra al focus */
+.login-input {
+  border-radius: 10px;
+  border: 2px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.login-input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.5);
+  outline: none;
+}
+
+/* Navbar personalizzata */
+.navbar-custom {
+  background: linear-gradient(90deg, #d72631, #1e90ff);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: #f9d423 !important; /* un giallo/arancio brillante per contrasto */
+  text-shadow: 0 0 8px #f9d423;
+}
+
+

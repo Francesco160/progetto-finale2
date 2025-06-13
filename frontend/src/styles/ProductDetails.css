@@ -1,0 +1,82 @@
+.product-details-container {
+  margin-top: 3rem;
+  max-width: 900px;
+}
+
+.product-card-elegant {
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  padding: 20px;
+  border: none;
+}
+
+.product-img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.action-buttons > button {
+  margin-right: 0.5rem;
+}
+
+
+
+
+.custom-alert {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #eaf4ff, #f4f9ff);
+  border: 2px solid var(--electric-blue);
+  color: var(--electric-blue);
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 16px;
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  z-index: 9999;
+  animation: fadeSlideIn 0.4s ease-out, fadeSlideOut 0.4s ease-in 2.6s forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}

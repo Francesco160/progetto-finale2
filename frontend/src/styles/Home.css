@@ -1,0 +1,81 @@
+.home-container {
+  background: linear-gradient(135deg, #fefefe, #f0f8ff);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 174, 255, 0.2);
+}
+
+.home-title {
+  color: #007bff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.home-card {
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+.home-img {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.home-product-title {
+  color: #004085;
+  font-size: 1.25rem;
+}
+
+.home-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+.custom-alert {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #eaf4ff, #f4f9ff);
+  border: 2px solid var(--electric-blue);
+  color: var(--electric-blue);
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-radius: 16px;
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  z-index: 9999;
+  animation: fadeSlideIn 0.4s ease-out, fadeSlideOut 0.4s ease-in 2.6s forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+
